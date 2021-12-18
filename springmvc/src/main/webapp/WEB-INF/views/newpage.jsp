@@ -7,7 +7,9 @@
 <title>New Page</title>
 </head>
 <body>
-
+	<h1 class="text-center">${title }</h1>
+	<p class="text-center">${desc }</p>
+	<hr>
 	<h1>Hi ${user.userName }</h1>
 	<h1>your email id is ${user.emial } and your password is ${user.userPassword }</h1>
 

@@ -12,6 +12,12 @@ import springmvc.model.User;
 @Controller
 public class ContackController {
 
+	@ModelAttribute
+	public void commonData(Model model) {
+		model.addAttribute("title", "learCodeWith Akash");
+		model.addAttribute("desc", "welcome to the page");
+	}
+
 	@RequestMapping("/cont")
 	public String showContact() {
 		System.out.println("contact page");
@@ -21,12 +27,10 @@ public class ContackController {
 	@RequestMapping(path = "/processform", method = RequestMethod.POST)
 	public String printConctact(@ModelAttribute User user) {
 
-
 		return "newpage";
 	}
 
 }
-
 
 /*
  * @RequestMapping(path = "/processform", method = RequestMethod.POST) public
