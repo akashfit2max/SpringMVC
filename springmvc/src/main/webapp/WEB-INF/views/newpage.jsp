@@ -7,6 +7,7 @@
 <title>New Page</title>
 </head>
 <body>
+	<h1 style="color: green;">${msg }</h1>
 	<h1 class="text-center">${title }</h1>
 	<p class="text-center">${desc }</p>
 	<hr>

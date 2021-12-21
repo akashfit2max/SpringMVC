@@ -15,9 +15,13 @@
     http://www.springframework.org/schema/tx/spring-tx.xsd
     ">
 
+
 	<tx:annotation-driven />
 
 	<context:component-scan base-package="springmvc"></context:component-scan>
+
+
+
 
 	<bean name="viewResolver"
 		class="org.springframework.web.servlet.view.InternalResourceViewResolver">
@@ -35,7 +39,6 @@
 			value="jdbc:mysql://localhost:3306/akash" />
 		<property name="username" value="root" />
 		<property name="password" value="aks123" />
-
 	</bean>
 
 
