@@ -31,6 +31,9 @@ public class ContackController {
 	@RequestMapping(path = "/processform", method = RequestMethod.POST)
 	public String printConctact(@ModelAttribute User user, Model m) {
 		System.out.println(user);
+		if (user.getUserName().isBlank()) {
+			return "redirect:/cont";
+		}
 		int createUser = this.userService.createUser(user);
 		m.addAttribute("msg", "user create with id = " + createUser);
 		return "newpage";

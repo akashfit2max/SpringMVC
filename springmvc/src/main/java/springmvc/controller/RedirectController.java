@@ -13,6 +13,8 @@ public class RedirectController {
 //		return "redirect:two";
 //	}
 
+	
+//	redirect to another page using redirect view
 	@RequestMapping("/one")
 	public RedirectView one() {
 		System.out.println("first");
