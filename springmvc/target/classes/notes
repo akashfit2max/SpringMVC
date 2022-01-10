@@ -1,0 +1,4 @@
+@pathvariable - bind method parameters to URI template
+
+/book/{id} ----- binded to int id
+@pathvariable("id") int id
